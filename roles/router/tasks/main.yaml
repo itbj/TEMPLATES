@@ -1,6 +1,6 @@
 ---
-- name: Generate configuration files 
-  template: src=router.j2 dest=/etc/ansible/CONFIGS/{{item.hostname}}.txt
+- name: Generate configuration files 20200423 
+  template: src=router.j2 dest=/tmp/CONFIGS/{{item.hostname}}.txt
   with_items: "{{ routers }}"
    
 
